@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>团队</title>	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>	
+		<link rel="stylesheet" type="text/css" href="../css/team.css"/>	
+			
+		
+	</head>
+	<body>
+		<header id="contact_top"><span></span></header>
+		<section id="contact_sec_one"><img class="team" src="../images/team/team.png"/></section>
+		
+		<div id="team_box">
+			<div id="mova_one">
+				<section id="contact_sec_two">
+					<ul class="team_ul1">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li id="li_btn"></li>
+					</ul>
+					<ul class="team_ul2">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</section>
+					
+				<section id="contact_sec_three">
+					<ul class="three_ul1">
+						<li class="active"><span>- </span>2016</li>
+						<li><span>- </span>2015</li>
+						<li><span>- </span>2014</li>
+					</ul>
+					<ul class="three_ul2">
+						<li>
+							<div><a>10</a><a>月</a></div>
+							<div><span>公司五周年庆</span><p>五年前的今天我们放飞激情与梦想，五年后的今天我们收获着责任与希望，五年的风雨练就我们搏击风雨的翅膀，五年的奋斗，铸就了我们健康事业的辉煌。</p></div>
+							<div><img src="../images/team/4.jpg" alt="" /></div>
+						</li>
+						<li>
+							<div><a>5</a><a>月</a></div>
+							<div><span>宜昌清江画廊游</span><p>EVT公司年度户外旅游又开始啦!</p></div>
+							<div><img class="two_tu" src="../images/team/2.jpg" alt="" /></div>
+						</li>
+						<li>
+							<div><a>5</a><a>月</a></div>
+							<div><span>庐山游</span><p>又到了一年一次的旅游活动了，好开心啊，这一次我们去了庐山，情不自禁让我们想起一首诗：
+													</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;东坡神来诓世人,</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;庐山真面何难识。
+													</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;佳木修竹遮望眼，</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赶上小题大做时。
+												</p></div>
+							<div><img src="../images/team/3.jpg" alt="" /></div>
+						</li>
+						
+						<li></li>
+						
+						<li>
+							<div><a>5</a><a>月</a></div>
+							<div><span>宜昌之三峡大坝</span><p>风和日丽暖，春意现盎然。宜昌二日游，同事尽相伴。接着浓浓的春意在公司组织全体员工到宜昌游玩，告别了城市的喧嚣，没有了工作的压力，围绕在我们身边的只有体现同事之间紧密精神的欢声笑语。</p></div>
+							<div><img src="../images/team/1.jpg" alt="" /></div>
+						</li>
+					
+						<li></li>
+					</ul>
+				</section>
+			</div>	
+		</div>
+		<!--<footer id="contact_footer">
+		</footer>-->
+	
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>	
+	<script type="text/javascript" src="../js/team.js"></script>
+	<script type="text/javascript">
+	
+		//rem
+		function setRem(){
+			var oWidth=document.body.clientWidth||document.documentElement.clientWidth;
+			console.log(oWidth);
+			var oHtml=document.getElementsByTagName("html")[0];
+			// 设置html的font-size 相当于设置rem
+			oHtml.style.fontSize=oWidth/1920*100+"px";
+		}
+		window.onload=function(){
+			setRem();
+		}
+		window.onresize=function(){
+			setRem();
+		};
+	
+	</script>
+</html>

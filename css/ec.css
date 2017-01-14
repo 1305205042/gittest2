@@ -1,0 +1,12 @@
+*{ margin: 0; padding: 0; text-decoration: none;}
+#container { width: 485px; height: 500px;overflow: hidden; position: relative;clear: both;}
+#list { width: 5820px; height: 500px; position: absolute; z-index: 1;}
+#list img { float: left;}
+#buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 250px;}
+#buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+#buttons .on {  background: orangered;}
+.arrow { cursor: pointer;line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;
+    position: absolute; z-index: 2; top: 370px;border-radius:40px;}
+#container:hover .arrow { display: block;}
+#prev { left: 185px; background: url(../images/产品/EC_prev.png) no-repeat center center;}
+#next { right: 215px; background: url(../images/产品/EC_next.png) no-repeat center center;}

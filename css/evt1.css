@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+/** 布局代码 **/
+html{overflow-y:hidden}
+body {font: 12px "microsoft yahei", Arial, Helvetica, sans-serif;color:#696969;margin:0px;padding:0px;font-weight:500;background:#0d131e}
+
+body，h1,h2,h3,h4,h5,h6,a,span,div,p,img,input,select,button,textarea,ul,li,ol,dl,dt,dd,form{
+    box-sizing:border-box;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0px;
+    padding:0px;
+    border:none;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    vertical-align:middle;
+}
+.lf     {float:left;}
+.rt     {float:right;}
+.clear  {clear:both;}
+html,body,.parent{ width:100%; height:100%;margin:0; padding:0;}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width:10px;
+	height:10px;
+}
+                   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background:#858585; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+              
+}
+
+

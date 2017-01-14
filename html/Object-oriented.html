@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>面向对象</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Object-oriented.css"/>
+
+	</head>
+	<body>
+		<div class="obj-header">
+			<div class="obj-top"></div>
+		</div>
+		
+		<div class="obj-section-one">
+			<img class="chuang" src="../images/05.png" />          
+		</div>
+		
+		<div class="obj-section-two">
+			<dl id="dl-one">
+				<dt><span>整车企业</span></dt>
+				<dd>
+					为整车企业提供成熟完整的新能源生态图TSP系统服务(新能源汽车安全监控服务、车联网TSP服务、差异化服务);
+					新能源汽车安全监控系统能实时采集新能源车辆工况数据,通过实时工况监测,及时有效的向后台及用户发送工况预警
+					信息,有效排除新能源汽车运行安全隐患;系统通过大数据分析,为整车企业研发部门、售后服务部门、销售部门、
+					合约经销商提供最核心的数据支持。
+							
+				</dd>
+			</dl>
+			
+			<dl id="dl-two">
+				<dt><span>示范城市</span></dt>
+				<dd>
+					为全国范围内新能源汽车应用推广城市提供新能源汽车安全监控全套解决方案(新能源汽车安全监控软件系统平台建设、
+					硬件服务器建设、云平台等服务),为城市加快新能源汽车产业发展、推进节能减排、促进大气污染治理提供最全面的
+					技术支持,为本城市运营的新能源汽车安全运行监管工作提供最完善的监管辅助,帮助城市综合平台有效管理新能源车辆、
+					运行状态、实时工况状态,提供排除新能源汽车运行安全隐患。
+				</dd>
+			</dl>
+			
+			<dl id="dl-three">
+				<dt><span>运营公司</span></dt>
+				<dd>
+					根据新能源车辆的技术特点,为其示范运营商(城市公交、出租、租赁、物流等)提供专业运营管理系统支持,搭配定制
+					化终端(智能手机、Pad等)APP客户端服务,为客户与用户间建立大型智能服务生态圈。
+					
+								
+				</dd>
+			</dl>			
+		</div>	
+	
+		<div id="v">
+			<img class="vv" src="../images/01.png" />
+		</div>
+		
+	</body>
+		<script type="text/javascript">
+			function setRem(){
+				var oWidth=document.body.clientWidth||document.documentElement.clientWidth;
+				console.log(oWidth);
+				var oHtml=document.getElementsByTagName("html")[0];
+				// 设置html的font-size 相当于设置rem
+				oHtml.style.fontSize=oWidth/1920*100+"px";
+			}
+			window.onload=function(){
+				setRem();
+			}
+			window.onresize=function(){
+				setRem();
+			}
+
+		</script>
+</html>

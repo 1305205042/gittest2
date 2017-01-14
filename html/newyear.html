@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EVT武汉电动汽车技术开发有限公司</title>
+<link href="../css/evt.css" rel="stylesheet" type="text/css">
+<style>
+		.bulleron{ background:url(../images/newyear/11.jpg); width:100%; height:100%}
+		
+		.bulleron{ display:flex; flex-wrap:wrap;overflow:hidden; }
+		
+		.column-bar{flex-basis: 100%;display: flex;justify-content: space-between; }
+		
+		.column-center{width: 100%;text-align: -webkit-center; text-align:center;}
+		
+		.config-line{ width:100%; height:80px; background:url(../images/newyear/16.png) repeat-x 0 0/40px; position:absolute; z-index:5}
+		
+		.column{display: flex; justify-content: space-between; position:absolute;top: 25%;left: 46%;transform: translateX(-50%); width:1050px;align-items: center;}
+		
+		.column-b{ align-self: flex-end;}
+		
+		.btn{ cursor:pointer; font-size:25px; text-align:center; color:#CCC;line-height: 60px; background:url(../images/newyear/15.png) -1px 0 no-repeat; width:163px; height:60px; position:absolute; bottom:8%; left:50%; transform:translateX(-50%)}
+		
+		.unTime{ font-family:myfzzy; font-size:22px; font-weight:bold; color:#fff; text-align:center;background:url(../images/newyear/17.png); width:139px; height:140px;transform: scale(.81);}
+		
+		.unTime ul{padding:30px 0px;line-height: 32px;}
+
+		@font-face{
+				font-family: myfzzy;
+				src:url(../css/方正新综艺简体.TTF);
+				font-weight:bold;
+		}
+		
+		.grop{ position:absolute; left:43.43%; top:73.3%;transform-origin:50%  0; transform:rotate(0deg);transition:all 1s ease-in-out;}
+</style>
+</head>
+
+<body>
+<script src="../js/jquery-1.8.3.js"></script>
+<div class="bulleron">
+
+  <div class="config-line"></div>
+  
+  <div class="column-bar" style="width:100%">
+     <img src="../images/newyear/8-s.png" width="381" height="154" style="z-index:6;">
+     <img src="../images/newyear/12-l.png" width="471" height="227">
+  </div>
+    
+  <div class="column">
+     <img src="../images/newyear/10.png" width="752" height="383">
+     <img class="grop" src="../images/newyear/19.png" width="22" height="122">
+     <div class="unTime">
+       <ul>
+       春节<br>倒计时
+       <div class="timeFix">
+         <div class="daojishi" id="01/28/2017 00:00:00"></div>
+       </div>
+       </ul>     
+     </div>
+  </div>
+    
+  <div class="column-b column-bar" style="position:relative;">
+      <img src="../images/newyear/13-l.png" width="385" height="141">
+      <img src="../images/newyear/14-l.png" width="543" height="140"> 
+  </div>
+  
+  <div class="btn">进入首页</div>
+
+  
+</div> 
+
+
+
+<script>
+$(function(){
+		$('.btn').click(function(){
+	  		$('#article_box',parent.document).html('<iframe src="html/shouye.html" style=" width:100%; height:100%;min-width: 1100px;" frameborder="0"></iframe>')
+		})
+		
+		var time = new Date().getDate()
+		setInterval(lxfEndtime,60);
+		 		var a = 20 
+				setInterval(function(){	
+			  		a = -a
+			  		$('.grop').css('transform','rotate('+a+'deg)')
+			
+				},1000)
+		})
+
+
+		//倒计时
+		function lxfEndtime(){
+				$(".daojishi").each(function(){
+					   //var lxfday=$(this).attr("lxfday");//用来判断是否显示天数的变量
+					   var endtime = new Date($(this).attr("id")).getTime();//取结束日期(毫秒值)
+					   var nowtime = new Date().getTime();  //今天的日期(毫秒值)
+					   var youtime = endtime-nowtime;//还有多久(毫秒值)
+					   var seconds = youtime/1000;//秒
+					   var minutes = Math.floor(seconds/60);//分
+					   var hours = Math.floor(minutes/60);//小时
+					   var days = Math.floor(hours/24);//天
+					   var CDay= days ;
+					   var CHour= hours % 24;
+					   var CMinute= minutes % 60;
+					   var CSecond= Math.floor(seconds%60);//"%"是取余运算，可以理解为60进一后取余数，然后只要余数。
+					   var c=new Date();
+					   var millseconds=c.getMilliseconds();
+					   var Cmillseconds=Math.floor(millseconds %100);
+					   if(CSecond<10){//如果秒数为单数，则前面补零
+					    CSecond="0"+CSecond;
+					   }
+					   if(CMinute<10){ //如果分钟数为单数，则前面补零
+					    CMinute="0"+CMinute;
+					   }
+					   if(CHour<10){//如果小时数为单数，则前面补零
+					    CHour="0"+CHour;
+					   }
+					   if(Cmillseconds<10) {//如果毫秒数为单数，则前面补零
+					    Cmillseconds="0"+Cmillseconds;
+					   }
+					   if(endtime<=nowtime){
+					    $(this).html("已过期")//如果结束日期小于当前日期就提示过期啦
+					   }else{
+					    $(this).html("<span class='timeh'>"+days+" 天</span>");
+					   }
+				});
+		}
+		
+		$(function(){
+				$('.btn').click(function(){
+			  		$('#article_box',parent.document).html('<iframe src="html/shouye.html" style=" width:100%; height:100%;min-width: 1100px;" frameborder="0"></iframe>')
+				})
+		})
+
+
+</script>
+
+</body>
+</html>

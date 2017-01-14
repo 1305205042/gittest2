@@ -1,0 +1,47 @@
+/********************
+---| GLOBAL TAGS | ***/
+* { margin: 0; padding: 0; outline: none; }
+html { height: 100%; }
+body { /*font: 13px/18px 'lucida sans regular','lucida sans',arial,helvetica,sans-serif;*/
+	font: 13px/21px 'Lucida Sans Unicode', 'Lucida Grande', Arial, Helvetica, sans-serif; color: #444; min-width: 940px; height: 100%; background:#fff; }
+img { border: none; }
+#n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
+#n a{ padding:0 4px; color:#333}
+
+.header-content { margin: 0; padding: 0; float: left; width: 100%; height: 100%; line-height: 22px; position: relative; z-index: 1;}
+/*.header-content-wrap {width: 940px; margin: 0 auto;}*/
+.header-content img {}
+.header-content .text { width:470px; margin-left: 50%; width:430px;}
+
+#slider {height: 100%;clear:both; display:flex; align-items: center;}
+/* => SLIDE PREV AND NEXT ARROWS <= */
+.slider-prev, .slider-next { text-indent:-9999px; width: 20px; height: 33px; background:url("../images/product/prev-next.png") no-repeat; z-index:999;opacity:.7;}
+.slider-prev { left:50px; background-position:top left; left: 45%; }
+.slider-next { right:50px;background-position: top right;right: 45%; }
+.slider-prev:hover, .slider-next:hover { opacity:1; }
+/* => SLIDER NAV o o o <= */
+.slider-nav { list-style:none; overflow:hidden;z-index:10; margin: 0;}
+.slider-nav li { float:left; }
+.slider-nav li a { display:block; width:10px; height:10px; overflow:hidden; padding:0px; margin:5px; background:#a0a4ac;border-radius:10px; text-decoration:none; text-indent:-999px; }
+.slider-nav li a:hover, .slider-nav li a.selected { background:#17A4D8; }
+/* => HOLY SLIDES <= */
+
+.slider section { display: none; }
+.slider section.first {display: flex; justify-content: space-around;}
+.slider-sections, .slider-sections section { width: 950px; height:300px; }
+.slider-sections {}
+
+.slider-sections section .product_title img{
+    position: absolute;
+    left: 50%;
+    margin-left:-125px;
+    top:50px;
+}
+.product_img{
+display: inline-block;
+    width: 310px;
+    height: 235px;
+}
+
+
+

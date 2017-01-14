@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>EVT武汉电动汽车技术开发有限公司</title>
+	<link href="css/evt.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+
+</head>
+	
+<body id="index_body">
+
+<div class="gengxin" style="position: absolute;z-index: 100;left:12%;width: 80%;height: 80px;">
+	<!--[if lt IE 9]>
+	  <div class="llqts" style="height:80px;width:100%;font-size:20px;color:#f00">
+	      <p>网站改版啦！您的浏览器版本过低，请升级浏览器<a target="_blank" rel="nofollow" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie">IE9及以上</a>(360安全浏览器请调至极速模式)或使用<a target="_blank" rel="nofollow" href="http://rj.baidu.com/soft/detail/25718.html?ald">谷歌浏览器</a>&nbsp;、&nbsp;<a href="http://www.firefox.com.cn/" target="_blank" rel="nofollow">火狐浏览器</a>来体验网站的新功能！</p>
+	  </div>
+	<![endif]-->	
+</div>
+
+			
+	
+<div class="parent">
+	
+
+	
+	
+    <header></header>
+    <nav></nav>
+	      	<aside id="aside">
+		        <div id="logo"></div>
+		        <div class="aside_center">
+					 <ul class="Tab"></ul>
+			         <ul class="erweima">
+				          <li style="line-height: 50px;">
+					           <img src="images/QRcode_05.png">
+					           <p>微信公共平台</p>
+				          </li>
+				     <ul/>
+				     <ul id="aside_footer" >
+				          <li>
+					           <img src="images/phone.png">
+					           <p class="aside_p common">027-87172725 -8002/8006</p>
+				           </li>
+				           <li>
+				           		<p class="aside_p common">Copyright © 2016 WH EVT Inc.All Rights Reserved</p>
+				           </li>
+			         </ul>
+				</div>
+	     	</aside>
+      
+    <article id="article_box">
+    	<iframe src="html/newyear.html" width="100%" height="100%"></iframe>
+    </article>
+    
+</div> 
+<script src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/jquery-letterfx.min.js"></script>
+<script>
+
+	//	if($('#index_body').onload){
+	//		alert(11)
+			setTimeout(function(){
+	//			alert(11)
+	//			$('#index_body').animate({'opacity':1})
+				$('#index_body').animate({'opacity':1,'filter':'alpha(opacity=100)'})	
+			},400)		
+	//	}
+	
+	$(window).resize(    
+	  // 图表自适应窗口变化
+		
+	)
+	//rem
+	function setRem(){
+		var oWidth=document.body.clientWidth||document.documentElement.clientWidth;
+		console.log(oWidth);
+		var oHtml=document.getElementsByTagName("html")[0];
+		// 设置html的font-size 相当于设置rem
+		oHtml.style.fontSize=oWidth/1920*100+"px";
+	}
+	window.onload=function(){
+		setRem();
+	}
+	window.onresize=function(){
+		setRem();
+	}
+	
+
+</script>
+
+</body>
+</html>

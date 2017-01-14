@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EVT武汉电动汽车技术开发有限公司</title>
+<link href="../css/evt.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/shouye.css"/>
+<link href="../css/jquery-letterfx.min.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.3.js"></script>
+<script src="../js/jquery-letterfx.min.js"></script>
+</head>
+
+<body id="shouye_body">
+
+<div class="parent">
+ 
+      
+    <article id="article_box">
+    	<div id="box">
+    		
+    	
+    	
+	    	<div class="article_bg"></div>    
+	    		
+	    	<div class="article_bg1">
+              <div id="article_bg1_box">
+               <p class="tagline big">致力于新能源汽车互联网在线系统发展</p>
+               <p class="tagline size">搭建新能源汽车大数据平台</p>
+               <p class="tagline smorl">专注新能源智慧汽车技术革新</p>
+               </div>
+            </div>
+	    	
+	    	<div class="sanjiao_1"><img class="img1" src="../images/3.png"/></div>
+	    	<div class="sanjiao_2"></div>
+	    	<div class="sanjiao_3"><img class="img2" src="../images/7.png"/></div>
+    	
+ <!--  			<canvas width="900px" height="800px" id="canvas">浏览器不支持画布</canvas>-->
+   			
+   			<footer>版权所有©武汉电动汽车技术开发有限公司</footer>
+   			
+   		</div>
+    </article>
+    
+
+    
+</div> 
+<script type="text/javascript" src="../js/index.js"></script>
+<script>
+
+setTimeout(function(){
+	$('#shouye_body').animate({'opacity':1,'filter':'alpha(opacity=100)'})	
+},200)	
+
+$(function(){
+  $(".tagline").letterfx({"fx":"smear","fx_duration":'2s'});	
+})
+</script>
+<script>
+//rem
+function setRem(){
+	var oWidth=document.body.clientWidth||document.documentElement.clientWidth;
+	console.log(oWidth);
+	var oHtml=document.getElementsByTagName("html")[0];
+	// 设置html的font-size 相当于设置rem
+	oHtml.style.fontSize=oWidth/1920*100+"px";
+}
+window.onload=function(){
+	setRem();
+	loadFont("myFirstFont", $('#article_bg1_box').get(0));
+
+
+
+}
+window.onresize=function(){
+	setRem();
+	
+}
+</script>
+
+<script type="text/javascript">
+// font: 字体名称，ele: 要使用此字体的元素
+	var a = 0;
+function loadFont(font, ele) {
+    var span = document.createElement("span");
+    // 这几个字母和符号宽度比较容易变化
+    span.innerHTML = "gW@i#Q!T";
+    // 设置为不可见，但可以测量宽度
+    span.style.visibility = "hidden";
+    // 字体大小为 500px，如果宽度变化比较容易区分
+    span.style.fontSize = "500px";
+    // 设置字体
+    span.style.fontFamily = font;
+    // 添加到页面
+    document.body.appendChild(span);
+    // 获取宽度
+    var width_now = span.offsetWidth;
+    // 每 0.05 秒检查一次是否加载
+
+    var interval_check = setInterval(function() {
+        // 宽度变化，说明字体被加载
+        if(span.offsetWidth != width_now) {
+			
+            clearInterval(interval_check);
+            // 设置字体为
+            ele.style.fontFamily = font;
+            // 移除 span
+            document.body.removeChild(span);
+            span = null;
+			
+            a=1
+			localStorage.setItem("empty",a)
+			
+		}	
+    }, 50);
+    
+	
+		if(localStorage.getItem("empty")){
+		    //Sconsole.log(localStorage.getItem(empty))
+			ele.style.fontFamily = "myFirstFont";
+			
+			}
+		
+	
+}
+</script>
+
+
+
+</body>
+</html>

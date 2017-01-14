@@ -1,0 +1,234 @@
+			body,html{
+				width: 100%;
+				height: 100%;
+				background: #eee;
+			}
+			.obj-header{
+				width: 100%;
+				height: .95rem;
+				
+				position: relative;
+			}
+			.obj-header .obj-top{
+				width: .48rem;
+				height: .06rem;
+				background: #004f9d;
+				position: absolute;
+				left:.84rem;
+				/*left: -.5rem;*/
+				top: .88rem;
+			/*	transform: translateX(.84rem);*/
+			}
+			
+			/*左边切入*/
+			.obj-top{
+			-webkit-animation:fadeInLeftBig 1.5s .8s ease both;
+			-moz-animation:fadeInLeftBig 1.5s .8s ease both;}
+			
+			@-webkit-keyframes fadeInLeftBig{
+			0%{opacity:0;
+			-webkit-transform:translateX(-2000px)}
+			100%{opacity:1;
+			-webkit-transform:translateX(0)}
+			}
+			
+			@-moz-keyframes fadeInLeftBig{
+			0%{opacity:0;
+			-moz-transform:translateX(-2000px)}
+			100%{opacity:1;
+			-moz-transform:translateX(0)}
+			}
+			
+			
+			
+			.obj-section-one{
+				width: 100%;
+				height:2.07rem;
+				
+				position: relative;
+			}
+			/*上方淡入*/
+			.obj-section-one{
+			-webkit-animation:fadeInDown 1s .5s ease both;
+			-moz-animation:fadeInDown 1s .5s ease both;}
+			@-webkit-keyframes fadeInDown{
+			0%{opacity:0;
+			-webkit-transform:translateY(-20px)}
+			100%{opacity:1;
+			-webkit-transform:translateY(0)}
+			}
+			@-moz-keyframes fadeInDown{
+			0%{opacity:0;
+			-moz-transform:translateY(-20px)}
+			100%{opacity:1;
+			-moz-transform:translateY(0)}
+			}
+			
+			
+			.obj-section-one img{
+				width: 4.95rem;
+				height: 1.36rem;
+			}
+			.obj-section-one .chuang{
+				position: absolute;
+				left:.84rem;
+				top: .25rem;
+			}
+			
+			.obj-section-two{
+				width: 100%;
+				
+				
+				position: relative;
+			
+			}
+			.obj-section-two dl{
+				position: absolute;
+				width: 3.38rem;
+				min-height: 5.43rem;
+				
+				
+			}
+			.obj-section-two dl dd{
+				padding: 0 .35rem;
+				font: .16rem/.25rem "微软雅黑";
+				
+				text-align:justify;
+			}
+			.obj-section-two dl dt{
+				position: relative;
+			}
+			.obj-section-two dl dt span{
+				position: absolute;
+				left: 1.34rem;
+				top: 1.22rem;
+			}
+			
+			.obj-section-two #dl-one{
+				left: .40rem;
+			}
+			
+			#dl-one{
+			-webkit-animation:fadeInLeftBig 1.5s 2s ease both;
+			-moz-animation:fadeInLeftBig 1.5s 2s ease both;}
+			
+			@-webkit-keyframes fadeInLeftBig{
+			0%{opacity:0;
+			-webkit-transform:translateX(-2000px)}
+			100%{opacity:1;
+			-webkit-transform:translateX(0)}
+			}
+			
+			@-moz-keyframes fadeInLeftBig{
+			0%{opacity:0;
+			-moz-transform:translateX(-2000px)}
+			100%{opacity:1;
+			-moz-transform:translateX(0)}
+			}
+			
+			
+			.obj-section-two #dl-one dt{
+				width:100%;
+				height:2.14rem ;
+				background: url("../images/02.png") no-repeat center 0;
+				background-size: 1.65rem 1.9rem;
+				text-align: center;				
+				font: .18rem "微软雅黑"; 				
+			}
+			
+			.obj-section-two #dl-two{
+				left: 3.79rem;
+			}
+			#dl-two{
+			-webkit-animation:fadeInLeftBig 1.5s 1.5s ease both;
+			-moz-animation:fadeInLeftBig 1.5s 1.5s ease both;}
+			
+			@-webkit-keyframes fadeInLeftBig{
+			0%{opacity:0;
+			-webkit-transform:translateX(-2000px)}
+			100%{opacity:1;
+			-webkit-transform:translateX(0)}
+			}
+			
+			@-moz-keyframes fadeInLeftBig{
+			0%{opacity:0;
+			-moz-transform:translateX(-2000px)}
+			100%{opacity:1;
+			-moz-transform:translateX(0)}
+			}
+			
+			
+			.obj-section-two #dl-two dt{
+				width:100%;
+				height:2.14rem ;
+				background: url("../images/03.png") no-repeat center 0;
+				background-size: 1.65rem 1.9rem;
+				text-align: center;				
+				font: .18rem "微软雅黑"; 				
+			}
+			
+			.obj-section-two #dl-three{
+				left: 7.18rem;
+			}
+			#dl-three{
+			-webkit-animation:fadeInLeftBig 1.5s 1s ease both;
+			-moz-animation:fadeInLeftBig 1.5s 1s ease both;}
+			
+			@-webkit-keyframes fadeInLeftBig{
+			0%{opacity:0;
+			-webkit-transform:translateX(-2000px)}
+			100%{opacity:1;
+			-webkit-transform:translateX(0)}
+			}
+			
+			@-moz-keyframes fadeInLeftBig{
+			0%{opacity:0;
+			-moz-transform:translateX(-2000px)}
+			100%{opacity:1;
+			-moz-transform:translateX(0)}
+			}
+			.obj-section-two #dl-three dt{
+				width:100%;
+				height:2.14rem ;
+				background: url("../images/04.png") no-repeat center 0;
+				background-size: 1.65rem 1.9rem;
+			
+				text-align: center;				
+				font: .18rem "微软雅黑"; 				
+			}
+			
+			#v{
+				position:absolute;
+				top: 0;
+				left: 8.15rem;
+			}
+			
+			/*.vv{
+   			 animation: geng 2s 2s linear both;
+			}
+			@keyframes geng{
+			    from{transform: scaleX(.5)}
+			    to{transform: scraleX(1)}
+			}*/
+
+			.vv{
+			-webkit-animation:fadeInDown 2s 2.8s ease both;
+			-moz-animation:fadeInDown 2s 2.8s ease both;}
+			@-webkit-keyframes fadeInDown{
+			0%{opacity:0;
+			-webkit-transform:translateY(-200px)}
+			100%{opacity:1;
+			-webkit-transform:translateY(0)}
+			}
+			@-moz-keyframes fadeInDown{
+			0%{opacity:0;
+			-moz-transform:translateY(-200px)}
+			100%{opacity:1;
+			-moz-transform:translateY(0)}
+			}
+			
+			
+			#v img{
+				width: 9.25rem;
+				height: 7.88rem;
+			}

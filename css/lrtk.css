@@ -1,0 +1,19 @@
+/*banner*/
+.none{ display:none;}
+.banner{ min-width:980px;height:690px; position:relative; margin:0 auto; overflow:hidden; z-index:1;}
+.banner_show{ width:100%; text-align:center; height:774px; overflow:hidden; position:relative;}
+.bannger_inbox{ position:absolute;top:0;left:50%}
+
+#main_txt{
+    position:absolute;
+    top:180px;
+    left:50%;
+    margin-left:-355px ;
+    z-index:1000;
+}
+/*翻页*/
+/*.banner_pre_next{position:relative;z-index:105;top:520px;width:980px;left:50%; height:37px;margin-left:-500px;*left:240px;}
+.banner_pre_next a{ width:37px; height:37px; background:url(../image/header/next.png) no-repeat; text-indent:-999em;}
+.banner_pre_next .banner_btn_left{position:absolute;left:-37px; background-position:0px 0px;}
+.banner_pre_next .banner_btn_right{position:absolute;right:-37px; background-position:-37px 0px;}*/
+.banner_inbox{ position:absolute;top:0;left:50%}
